@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Code Rist - حلول البرمجة والتصميم والمونتاج والتسويق الرقمي.">
+  <meta name="theme-color" content="#0b1530">
+  <title>Code Rist | نصنع حضورك الرقمي</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="img/logo1.png">
+</head>
+<body>
+
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-logo">CR</div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand" aria-label="Code Rist الرئيسية">
+        <img src="img/logo1.png" alt="Code Rist Logo" class="brand-mark">
+        <span class="brand-name">Code <b>Rist</b></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="فتح القائمة" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="القائمة الرئيسية">
+        <a href="#home" class="active">الرئيسية</a>
+        <a href="#about">عن الشركة</a>
+        <a href="#services">خدماتنا</a>
+        <a href="#portfolio">أعمالنا</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+
+      <button class="project-button open-project-modal" type="button">
+        اطلب مشروعك
+        <i class="fa-solid fa-arrow-left-long"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-backdrop" aria-hidden="true">
+        <div class="workspace-screen">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="workspace-keyboard"></div>
+        <div class="workspace-cup">&lt;/&gt;</div>
+        <div class="workspace-plant"><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <h1>نصمم، نبرمج، ونبدع</h1>
+          <p>
+            نجعل أفكارك واقعًا رقميًا من خلال تصميم المواقع، تطوير الأنظمة،
+            تطبيقات الموبايل، والاستضافة.
+          </p>
+        </div>
+
+        <div class="hero-device reveal" aria-label="نموذج لواجهة Code Rist على الهاتف">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-status">
+                <b>9:41</b>
+                <span><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-battery-full"></i></span>
+              </div>
+
+              <div class="phone-nav">
+                <button type="button" aria-label="القائمة"><i class="fa-solid fa-bars"></i></button>
+                <button type="button" aria-label="الإشعارات" class="phone-notification"><i class="fa-regular fa-bell"></i><em>3</em></button>
+              </div>
+
+              <div class="phone-intro">
+                <div class="phone-intro-copy">
+                  <span>مرحبًا بك في</span>
+                  <h3>Code Rist</h3>
+                  <p>حلول رقمية مبتكرة تدفع أعمالك إلى الأمام.</p>
+                  <a href="#services">استكشف خدماتنا <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+                <div class="phone-art" aria-hidden="true">
+                  <i></i><i></i><i></i><i></i>
+                </div>
+              </div>
+
+              <div class="phone-section-title"><b>خدماتنا</b><span></span></div>
+
+              <div class="phone-services">
+                <article>
+                  <i class="fa-solid fa-code"></i>
+                  <b>تطوير المواقع</b>
+                  <small>مواقع احترافية سريعة ومتجاوبة</small>
+                </article>
+                <article>
+                  <i class="fa-solid fa-desktop"></i>
+                  <b>تطوير الأنظمة</b>
+                  <small>أنظمة مخصصة تلبي احتياجاتك</small>
+                </article>
+                <article>
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  <b>تطبيقات الموبايل</b>
+                  <small>تطبيقات Android وiOS</small>
+                </article>
+                <article>
+                  <i class="fa-solid fa-pen-ruler"></i>
+                  <b>التصميم الجرافيكي</b>
+                  <small>هويات بصرية وتصاميم احترافية</small>
+                </article>
+              </div>
+
+              <div class="phone-stats">
+                <div><b>120+</b><span>مشروع مكتمل</span></div>
+                <div><b>85+</b><span>عميل سعيد</span></div>
+                <div><b>5+</b><span>سنوات خبرة</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <svg class="hero-wave" viewBox="0 0 1440 185" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,74 C170,210 282,204 430,139 C605,62 697,112 842,137 C1035,171 1177,79 1286,52 C1350,36 1396,47 1440,22 L1440,185 L0,185 Z"></path>
+      </svg>
+    </section>
+
+
+    <section class="about section" id="about">
+      <div class="container about-layout">
+        <div class="about-media reveal">
+          <div class="about-card large-card">
+            <div class="about-screen">
+              <img src="img/logo1.png" alt="Code Rist Logo" class="screen-logo">
+              <h3>Code Rist</h3>
+              <p>Strategy • Design • Development</p>
+            </div>
+          </div>
+          <div class="about-dots"></div>
+        </div>
+
+        <div class="about-copy reveal">
+          <div class="section-kicker">عن الشركة</div>
+          <h2>نبني تجارب رقمية <span>تترك أثرًا</span></h2>
+          <p>
+            Code Rist شركة متخصصة في الحلول الرقمية، تجمع بين التفكير الإبداعي
+            والتنفيذ التقني لتقديم مواقع وتطبيقات وتصاميم تساعد العلامات التجارية على النمو.
+          </p>
+          <p>
+            نبدأ بفهم احتياج العميل، ثم نخطط ونصمم ونبرمج ونختبر، وصولًا إلى إطلاق
+            مشروع متكامل يناسب الجمهور ويحقق الهدف.
+          </p>
+
+          <div class="about-points">
+            <div><i class="fa-solid fa-check"></i><span><b>جودة في التنفيذ</b>اهتمام بالتفاصيل والمعايير الحديثة.</span></div>
+            <div><i class="fa-solid fa-check"></i><span><b>حلول مخصصة</b>كل مشروع يُبنى وفق احتياجاته.</span></div>
+            <div><i class="fa-solid fa-check"></i><span><b>دعم مستمر</b>متابعة قبل الإطلاق وبعده.</span></div>
+            <div><i class="fa-solid fa-check"></i><span><b>التزام بالمواعيد</b>خطة واضحة وتسليم منظم.</span></div>
+          </div>
+
+          <button class="outline-btn open-project-modal" type="button">تحدث معنا عن فكرتك <i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">خدماتنا</div>
+            <h2>كل ما يحتاجه مشروعك <span>في مكان واحد</span></h2>
+          </div>
+          <p>من الفكرة وحتى الإطلاق، نقدم حلولًا متكاملة بتصميم عصري وتقنيات مناسبة.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-number">01</div>
+            <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>برمجة مواقع الويب</h3>
+            <p>مواقع تعريفية ومتاجر وأنظمة إلكترونية سريعة، آمنة ومتجاوبة مع مختلف الأجهزة.</p>
+            <button class="service-link open-project-modal" type="button">اطلب الخدمة <i class="fa-solid fa-arrow-left"></i></button>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-number">02</div>
+            <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <h3>تطبيقات الهواتف</h3>
+            <p>تصميم وتطوير تطبيقات عملية لنظامي Android وiOS بواجهات سهلة الاستخدام.</p>
+            <button class="service-link open-project-modal" type="button">اطلب الخدمة <i class="fa-solid fa-arrow-left"></i></button>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-number">03</div>
+            <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+            <h3>الدومين والاستضافة</h3>
+            <p>حجز نطاقات واستضافة موثوقة مع إعداد الحماية والنسخ الاحتياطي والدعم الفني.</p>
+            <button class="service-link open-project-modal" type="button">اطلب الخدمة <i class="fa-solid fa-arrow-left"></i></button>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-number">04</div>
+            <div class="service-icon"><i class="fa-solid fa-bullhorn"></i></div>
+            <h3>التسويق الإلكتروني</h3>
+            <p>خطط محتوى وحملات رقمية تساعدك على الوصول إلى جمهورك وبناء حضور فعال.</p>
+            <button class="service-link open-project-modal" type="button">اطلب الخدمة <i class="fa-solid fa-arrow-left"></i></button>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-number">05</div>
+            <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h3>التصميم الجرافيكي</h3>
+            <p>هويات بصرية وشعارات ومنشورات إعلانية تعبّر عن علامتك بأسلوب واضح ومميز.</p>
+            <button class="service-link open-project-modal" type="button">اطلب الخدمة <i class="fa-solid fa-arrow-left"></i></button>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-number">06</div>
+            <div class="service-icon"><i class="fa-solid fa-film"></i></div>
+            <h3>المونتاج والموشن</h3>
+            <p>فيديوهات إعلانية ومحتوى سوشيال ميديا وموشن جرافيك يجذب الانتباه.</p>
+            <button class="service-link open-project-modal" type="button">اطلب الخدمة <i class="fa-solid fa-arrow-left"></i></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="hosting section" id="portfolio">
+      <div class="hosting-glow"></div>
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker light">معرض الأعمال</div>
+            <h2 style="color:#fff;">مشاريع نفخر <span style="color: var(--accent);">بتنفيذها</span></h2>
+          </div>
+          <div class="portfolio-filter" role="group" aria-label="فلترة الأعمال">
+            <button class="active" data-filter="all" type="button">الكل</button>
+            <button data-filter="web" type="button">مواقع</button>
+            <button data-filter="design" type="button">تصميم</button>
+            <button data-filter="media" type="button">مونتاج</button>
+          </div>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-item wide reveal" data-category="web">
+            <div class="project-art art-one"><div class="mock-browser"><i></i><i></i><i></i><span></span><b></b></div></div>
+            <div class="project-info"><span>تطوير مواقع</span><h3>منصة خدمات أعمال</h3><a href="#contact" aria-label="مشاهدة المشروع"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+          </article>
+
+          <article class="portfolio-item reveal" data-category="design">
+            <div class="project-art art-two"><div class="brand-poster">NOVA<small>IDENTITY</small></div></div>
+            <div class="project-info"><span>هوية بصرية</span><h3>هوية Nova</h3><a href="#contact" aria-label="مشاهدة المشروع"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+          </article>
+
+          <article class="portfolio-item reveal" data-category="media">
+            <div class="project-art art-three"><div class="play-circle"><i class="fa-solid fa-play"></i></div></div>
+            <div class="project-info"><span>مونتاج وموشن</span><h3>إعلان منتج رقمي</h3><a href="#contact" aria-label="مشاهدة المشروع"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+          </article>
+
+          <article class="portfolio-item reveal" data-category="web">
+            <div class="project-art art-four"><div class="phone-mock"><span></span><b></b><i></i></div></div>
+            <div class="project-info"><span>تطبيقات</span><h3>تطبيق توصيل</h3><a href="#contact" aria-label="مشاهدة المشروع"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+          </article>
+
+          <article class="portfolio-item wide reveal" data-category="design">
+            <div class="project-art art-five"><div class="social-grid"><i></i><i></i><i></i></div></div>
+            <div class="project-info"><span>سوشيال ميديا</span><h3>حملة محتوى إبداعية</h3><a href="#contact" aria-label="مشاهدة المشروع"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-strip">
+      <div class="container cta-layout reveal">
+        <div><span>لديك فكرة؟</span><h2>دعنا نبني مشروعًا مميزًا معًا</h2></div>
+        <button class="white-btn open-project-modal" type="button">ابدأ مشروعك <i class="fa-solid fa-arrow-left"></i></button>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact-layout">
+        <div class="contact-copy reveal">
+          <div class="section-kicker">بيانات التواصل</div>
+          <h2>لنبدأ الحديث عن <span>مشروعك القادم</span></h2>
+          <p>اكتب لنا فكرتك، وسنتواصل معك لمناقشة المتطلبات والخطوات المناسبة.</p>
+
+          <div class="contact-list">
+            <a href="tel:+970590000000"><i class="fa-solid fa-phone"></i><span><small>الهاتف</small>+972567755799</span></a>
+            <a href="mailto:info@coderist.com"><i class="fa-solid fa-envelope"></i><span><small>البريد الإلكتروني</small>coderist2026@gmail.com</span></a>
+            <div><i class="fa-solid fa-location-dot"></i><span><small>الموقع</small>غزة، فلسطين</span></div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" aria-label="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/coderist1/?hl=en" aria-label="إنستغرام" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/coderist-technology-27408a427/" aria-label="لينكدإن" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://wa.me/972567755799" aria-label="واتساب" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-title"><span>تواصل معنا</span><h3>أرسل رسالة سريعة</h3></div>
+          <div class="field-row">
+            <label>الاسم الكامل<input type="text" name="name" placeholder="اكتب اسمك" required></label>
+            <label>رقم الهاتف<input type="tel" name="phone" placeholder="05X XXX XXXX" required></label>
+          </div>
+          <label>البريد الإلكتروني<input type="email" name="email" placeholder="name@example.com" required></label>
+          <label>رسالتك<textarea name="message" rows="5" placeholder="حدثنا عن المشروع أو الخدمة المطلوبة" required></textarea></label>
+          <button type="submit" class="primary-btn full">إرسال الرسالة <i class="fa-solid fa-paper-plane"></i></button>
+          <p class="form-status" id="contactStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand" aria-label="Code Rist الرئيسية">
+          <img src="img/logo2.png" alt="Code Rist Logo" class="brand-mark">
+          <span class="brand-name">Code <b>Rist</b></span>
+        </a>
+        <p>نقدّم حلولًا رقمية تجمع بين الإبداع والتقنية لبناء مشاريع قوية وقابلة للنمو.</p>
+      </div>
+      <div><h4>روابط سريعة</h4><a href="#about">عن الشركة</a><a href="#services">خدماتنا</a><a href="#portfolio">أعمالنا</a><a href="#contact">تواصل معنا</a></div>
+      <div><h4>الخدمات</h4><a href="#services">تطوير المواقع</a><a href="#services">تطبيقات الهواتف</a><a href="#services">التصميم والمونتاج</a><a href="#portfolio">أعمالنا</a></div>
+      <div><h4>ساعات العمل</h4><p>السبت - الخميس</p><p>9:00 صباحًا - 5:00 مساءً</p></div>
+    </div>
+    <div class="container footer-bottom"><p>جميع الحقوق محفوظة © <span id="currentYear"></span> Code Rist</p><a href="#home">العودة للأعلى <i class="fa-solid fa-arrow-up"></i></a></div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/972567755799" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب"><i class="fa-brands fa-whatsapp"></i><span>تواصل معنا</span></a>
+
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop close-project-modal"></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+      <button class="modal-close close-project-modal" type="button" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-heading"><span>ابدأ مشروعك</span><h2 id="projectModalTitle">أخبرنا عن فكرتك</h2><p>املأ البيانات وسنجهز رسالة طلب يمكنك إرسالها مباشرة عبر واتساب.</p></div>
+      <form id="projectForm" novalidate>
+        <div class="field-row">
+          <label>الاسم الكامل<input type="text" name="clientName" required></label>
+          <label>رقم المحمول<input type="tel" name="clientPhone" required></label>
+        </div>
+        <div class="field-row">
+          <label>البريد الإلكتروني<input type="email" name="clientEmail" required></label>
+          <label>اسم المؤسسة<input type="text" name="organization" placeholder="اختياري"></label>
+        </div>
+        <fieldset>
+          <legend>نوع الخدمة</legend>
+          <div class="service-options">
+            <label><input type="checkbox" name="services" value="برمجة موقع"><span><i class="fa-solid fa-code"></i> برمجة موقع</span></label>
+            <label><input type="checkbox" name="services" value="تطبيق موبايل"><span><i class="fa-solid fa-mobile-screen"></i> تطبيق موبايل</span></label>
+            <label><input type="checkbox" name="services" value="استضافة"><span><i class="fa-solid fa-server"></i> استضافة</span></label>
+            <label><input type="checkbox" name="services" value="تسويق إلكتروني"><span><i class="fa-solid fa-bullhorn"></i> تسويق إلكتروني</span></label>
+            <label><input type="checkbox" name="services" value="تصميم جرافيكي"><span><i class="fa-solid fa-pen-nib"></i> تصميم جرافيكي</span></label>
+            <label><input type="checkbox" name="services" value="مونتاج وموشن"><span><i class="fa-solid fa-film"></i> مونتاج وموشن</span></label>
+          </div>
+        </fieldset>
+        <label>عنوان أو وصف المشروع<textarea name="projectDetails" rows="4" required placeholder="اكتب فكرة مختصرة عن المشروع"></textarea></label>
+        <button class="primary-btn full" type="submit">إرسال الطلب عبر واتساب <i class="fa-brands fa-whatsapp"></i></button>
+        <p class="form-status" id="projectStatus" role="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
